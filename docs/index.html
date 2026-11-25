@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>盘搜一键查网盘 - 豆瓣/B站/全局划词百度夸克网盘搜索工具 (panso.xin)</title>
+<meta name="description" content="盘搜(云搜 panso.xin)官方开源浏览器快捷搜索工具：支持豆瓣电影、IMDb、Bangumi一键查百度网盘与夸克网盘资源，提供油猴脚本与免安装书签版。">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f4f6fb;color:#1f2937;line-height:1.7}
+.wrap{max-width:880px;margin:32px auto;padding:0 16px}
+.hero{background:linear-gradient(135deg,#1e3a8a,#4f46e5);color:#fff;border-radius:16px;padding:34px 28px;margin-bottom:22px}
+.hero h1{font-size:26px;margin-bottom:10px}
+.hero p{opacity:.92;font-size:15px;margin-bottom:20px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:700;text-decoration:none;font-size:14px}
+.btn-w{background:#fff;color:#1e3a8a}
+.btn-g{background:#10b981;color:#fff}
+.btn-o{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:24px;margin-bottom:18px}
+.card h2{font-size:18px;margin-bottom:12px;color:#111827}
+.sbox{display:flex;gap:8px;margin-top:12px}
+.sbox input{flex:1;padding:11px 14px;border:1px solid #d1d5db;border-radius:9px;font-size:14px}
+.sbox button{padding:11px 20px;border:none;border-radius:9px;background:#4f46e5;color:#fff;font-weight:700;cursor:pointer}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.links a{padding:6px 14px;background:#eef2ff;color:#4338ca;border-radius:999px;text-decoration:none;font-size:13px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>盘搜一键查网盘 · 开源浏览器快捷工具</h1>
+    <p>逛豆瓣电影、IMDb、Bangumi 自动出现「查百度/夸克网盘」按钮，任意网页划词按 Alt+P 秒查有效资源 — 免费免注册、开源零广告。</p>
+    <div class="btns">
+      <a class="btn btn-w" href="https://raw.githubusercontent.com/hah049580-art/panso-quick-search/main/panso-quick-search.user.js">⚡ 安装油猴脚本 (.user.js)</a>
+      <a class="btn btn-g" href="javascript:(function(){var s=(window.getSelection?window.getSelection().toString():'').trim()||prompt('输入关键词（盘搜 panso.xin）：','');if(s&&s.trim())window.open('https://panso.xin/?k='+encodeURIComponent(s.trim()),'_blank');})();">📌 拖我到书签栏：盘搜一键查</a>
+      <a class="btn btn-o" href="https://panso.xin/">🌐 直达盘搜官网 (panso.xin)</a>
+    </div>
+  </section>
+  <section class="card">
+    <h2>在线体验盘搜（百度网盘 + 夸克网盘聚合检索）</h2>
+    <form class="sbox" action="https://panso.xin/" method="get" target="_blank">
+      <input type="text" name="k" placeholder="输入电影、热播剧、短剧、韩剧或考研资料关键词..." required>
+      <button type="submit">立即在盘搜检索</button>
+    </form>
+  </section>
+  <section class="card">
+    <h2>高频热门专题直达</h2>
+    <div class="links">
+      <a href="https://panso.xin/">盘搜首页</a>
+      <a href="https://panso.xin/landing/yunpansou.html">云盘搜入口</a>
+      <a href="https://panso.xin/landing/baiduyun-dianying.html">百度云电影 4K</a>
+      <a href="https://panso.xin/landing/hanju-ziyuan.html">2026 韩剧夸克网盘</a>
+      <a href="https://panso.xin/hot/duanju.html">爆款短剧热榜</a>
+      <a href="https://panso.xin/hot/dianshiju.html">热播电视剧</a>
+      <a href="https://panso.xin/hot/ziliao.html">考研考公资料</a>
+      <a href="https://panso.xin/z/">每日实时保存</a>
+    </div>
+  </section>
+  <p style="text-align:center;font-size:13px;color:#6b7280;margin-top:20px;">
+    MIT 开源项目 · <a href="https://github.com/hah049580-art/panso-quick-search" style="color:#4f46e5">GitHub 源码</a> · <a href="https://panso.xin/" style="color:#4f46e5">盘搜 panso.xin</a>
+  </p>
+</div>
+</body>
+</html>
