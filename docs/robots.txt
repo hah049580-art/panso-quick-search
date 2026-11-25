@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hah049580-art.github.io/panso-quick-search/sitemap.xml
